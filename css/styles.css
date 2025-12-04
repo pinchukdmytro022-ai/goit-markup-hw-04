@@ -442,9 +442,7 @@ img{
 }
 
 .our-portfolio-li:hover{
-    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
-    0 1px 1px rgba(46, 47, 66, 0.16),
-    0 1px 6px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .our-portfolio-li:hover .overlay-text{
@@ -454,13 +452,6 @@ img{
 .our-portfolio-thumb:hover{
     transform: translateY(0%);
 }
-
-.our-portfolio-li:focus-within{
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 6px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-
 
 .footer-line-socials p{
     font-weight: 500;
