@@ -105,9 +105,11 @@ img{
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    margin: 0;
+    margin: 0 auto 48px;
     padding: 188px 0;
     max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-effective-sol-button{
@@ -125,6 +127,7 @@ img{
     height: 56px;
     border: none;
     border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :hover.section-effective-sol-button{
@@ -138,6 +141,13 @@ img{
 .section-effective-sol{
     background-color: #2e2f42;
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7)), (rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    height: 600px;
+    text-align: center;
+    max-width: 1440px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .title {
@@ -168,6 +178,7 @@ img{
     font-weight: 400;
     letter-spacing: 0.02em;
     text-align: center;
+    margin: 0;
 }
 
 .section-our-team{
@@ -178,6 +189,11 @@ img{
 .footer-line{
     background: #2e2f42;
     padding: 100px 0;
+}
+
+.container-footer-line{
+    display: flex;
+    align-items: baseline;
 }
 
 .logo-footer{
@@ -197,6 +213,7 @@ img{
     letter-spacing: 0.02em;
     line-height: 1.5;
     max-width: 264px;
+    margin-right: 120px;
 }
 
 .logo-studio-sec{
@@ -288,10 +305,17 @@ img{
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .our-portfolio-li{
     width: calc((100% - 48px) / 3);
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-card{
@@ -300,3 +324,145 @@ img{
     border-top: none;
 }
 
+.our-team-socials{
+    display: flex;          
+    gap: 24px;             
+    padding: 0;
+    margin: 0;
+    list-style: none;     
+    justify-content: center;
+}
+
+.our-team-social{
+    list-style: none;
+}
+
+.our-team-social .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    color: #fff;
+}
+
+.our-team-social .link .icon{
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd;
+    transition: fill 250ms ease-in-out;
+}
+
+.our-team-social .link:hover,
+.our-team-social .link:focus{
+    background-color: #404bbf;
+}
+
+.our-team-li:first-child{
+    box-shadow:
+    0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.our-portfolio-thumb{
+    position: relative;
+    overflow: hidden;
+}
+
+.our-portfolio-thumb img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 32px;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-portfolio-li:hover{
+    box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+    0 1px 1px rgba(46, 47, 66, 0.16),
+    0 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.our-portfolio-li:hover .overlay-text{
+    transform: translateY(0%);
+}
+
+.our-portfolio-thumb:hover{
+    transform: translateY(0);
+}
+
+.our-portfolio-li:focus-within{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 6px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
+.footer-line-socials p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+}
+
+.footer-social-list{
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social-item{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-social-title{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:#F4F4FD;
+    margin-bottom: 16px;
+}
+
+.footer-social-link{
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover{
+    background-color: #31d0aa;
+}
+
+.footer-social-link:focus{
+    background-color: #31d0aa;
+}
+
+.footer-social-icon{
+    fill: #f4f4fd;
+}
