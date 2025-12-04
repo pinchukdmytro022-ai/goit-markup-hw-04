@@ -452,7 +452,7 @@ img{
 }
 
 .our-portfolio-thumb:hover{
-    transform: translateY(0);
+    transform: translateY(0%);
 }
 
 .our-portfolio-li:focus-within{
