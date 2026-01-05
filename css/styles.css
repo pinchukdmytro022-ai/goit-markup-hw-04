@@ -68,12 +68,12 @@ img{
 .nav-link:focus{
     color: #404bbf
 }
-    
-.nav-link .current{
+
+.nav-link.current{
     color: #404bbf;
 }
 
-.nav-link .current::after{
+.nav-link.current::after{
     content: "";
     position: absolute;
     left: 0;
