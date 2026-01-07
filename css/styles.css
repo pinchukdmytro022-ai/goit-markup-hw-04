@@ -55,8 +55,6 @@ img{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    list-style-type: none;
-    position: relative;
     transition: color 250ms
     cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -70,21 +68,10 @@ img{
 }
 
 .nav-link.current{
-    color: #404bbf;
+    position: relative;
 }
 
 .nav-link.current::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
-    background-color: #404bbf;
-    border-radius: 2px;
-}
-
-.nav-link::after{
     content: "";
     position: absolute;
     left: 0;
