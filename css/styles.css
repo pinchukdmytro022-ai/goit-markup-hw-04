@@ -59,16 +59,14 @@ img{
     cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link:hover{
-    color: #404bbf
-}
-
+.nav-link:hover,
 .nav-link:focus{
     color: #404bbf
 }
 
 .nav-link.current{
     position: relative;
+    color: #404bbf
 }
 
 .nav-link.current::after{
@@ -200,7 +198,7 @@ img{
     font-weight: 400;
     letter-spacing: 0.02em;
     text-align: left;
-    margin: 0;
+    margin-bottom: 8px;
 }
 
 .our-team-card .title-three,
